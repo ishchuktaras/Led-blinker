@@ -1,0 +1,21 @@
+.menu {
+  width: 200px;
+}
+
+.menu a {
+  background-color: rgb(148, 196, 196);
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: rgba(144, 144, 160, 0.8);
+  color: white;
+}
+
+.menu a.active {
+  background-color: rgb(14, 54, 105);
+  color: white;
+}
