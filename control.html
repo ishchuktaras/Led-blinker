@@ -13,27 +13,38 @@
 </head>
 
 <body>
-  <div class="menu">
+  <div class="menu levy pe-4">
     <a href="index.html">Menu</a>
     <a href="control.html" class="active">Control</a>
     <a href="configuration.html">Configuration</a>
     <a href="logs.html">Logs</a>
   </div>
-  <div class="control">
-    <div class="text">
-      <p>Actual state:</p>
+  <div class="container border border-primary my-5 pravy w-50">
+    <div class="row  my-5">
+      <div class="form-group">
+        <div class="levy text-end pe-4">
+          <p>Actual state:</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="levy text-end pe-4">
+          <p>New state:</p>
+        </div>
+      </div>
+      <div class="container border border-primary w-50 p-3 my-3 pravy pe-4">
+          <form id="pole_control" action="" method="get">
+          <input type="radio" id="off" value="OFF">
+          <label for="OFF">OFF</label><br>
+          <input type="radio" id="on" value="ON">
+          <label for="ON">ON</label><br>
+          <input type="radio" id="blinking" value="BLINKING" checked>
+          <label for="BLINKING">BLINKING</label><br>
+        </form>
+      </div>
+      <div class="form-group col-9 mx-2">
+        <input type="submit" value="set">
+      </div>
     </div>
-    <div class="text">
-      <p>New state:</p>
-    </div>
-    <form id="pole_control" action="" method="get" value="pole">
-      <input type="radio" id="off" value="OFF">
-      <label for="OFF">OFF</label><br>
-      <input type="radio" id="on" value="ON">
-      <label for="ON">ON</label><br>
-      <input type="radio" id="blinking" value="BLINKING">
-      <label for="BLINKING">BLINKING</label><br>
-    </form>
   </div>
 
 </body>
