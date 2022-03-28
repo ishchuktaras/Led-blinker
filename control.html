@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Control</title>
   <link rel="stylesheet" href="style.css">
-  <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type = "text/javascript"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="script.js"></script>
 </head>
+
 <body>
   <div class="menu">
-    <a href="index.html" >Menu</a>
+    <a href="index.html">Menu</a>
     <a href="control.html" class="active">Control</a>
     <a href="configuration.html">Configuration</a>
     <a href="logs.html">Logs</a>
   </div>
   <div class="control">
-    <form action="" method="get">
-    <input type="radio" id="off" value="OFF">
-    <label for="OFF">OFF</label>
-    <input type="radio" id="on" value="ON">
-    <label for="ON">ON</label>
-    <input type="radio" id="blinking" value="BLINKING">
-    <label for="BLINKING">BLINKING</label>
-  </form>
+    <div class="text">
+      <p>Actual state:</p>
+    </div>
+    <div class="text">
+      <p>New state:</p>
+    </div>
+    <form id="pole_control" action="" method="get" value="pole">
+      <input type="radio" id="off" value="OFF">
+      <label for="OFF">OFF</label><br>
+      <input type="radio" id="on" value="ON">
+      <label for="ON">ON</label><br>
+      <input type="radio" id="blinking" value="BLINKING">
+      <label for="BLINKING">BLINKING</label><br>
+    </form>
   </div>
-  
+
 </body>
+
 </html>

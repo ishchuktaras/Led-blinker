@@ -1,5 +1,7 @@
+
 .menu {
   width: 25%;
+  margin: 15px 20px;
 }
 
 .menu a {
@@ -21,7 +23,19 @@
 }
 
 .control {
+  box-sizing: border-box;
   width: 30%;
-  display: block;
+  height: 200px;
   margin: 15px 20px;
+  background-color: rgb(148, 196, 196);
+  color: black;
+  padding: 12px;
+  border: 1px solid black ;
+}
+#pole_control {
+  border: 1px solid black;
+}
+.text {
+  float: left;
+  
 }
