@@ -7,43 +7,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Control</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="script.js"></script>
 </head>
 
 <body>
-  <div class="menu levy pe-4">
+  <div class="menu">
     <a href="index.html">Menu</a>
     <a href="control.html" class="active">Control</a>
     <a href="configuration.html">Configuration</a>
     <a href="logs.html">Logs</a>
   </div>
-  <div class="container border border-primary my-5 pravy w-50">
-    <div class="row my-5">
-      <div class="form-group">
-        <div class="levy pe-4">
-          <p>Actual state:
-          <pre id="log"></pre> 
-          </p>
-        </div>
-      </div>
-      <div class="container border border-primary p-3 w-50 my-3">
-        <fieldset>
-          <legend>New state:</legend>
-          <form method="get">
-            <input name="controller" type="radio" id="off" value="OFF">
-            <label for="OFF">OFF</label><br>
-            <input name="controller" type="radio" id="on" value="ON">
-            <label for="ON">ON</label><br>
-            <input name="controller" type="radio" id="blinking" value="BLINKING" checked>
-            <label for="BLINKING">BLINKING</label><br>
-        </fieldset>
-        </form>
-      </div>
-      <div class="form-group col-9 mx-2">
-        <input type="submit">
-      </div>
+  <div class="container">
+    <div class="text-actual">
+      <p>Actual state:
+      <pre id="log"></pre>
+      </p>
+    </div>
+    <div class="text-new">
+      <p>New state:</p>
+    </div>
+    <fieldset>
+      <form method="get">
+        <input name="controller" type="radio" id="off" value="OFF">
+        <label for="OFF">OFF</label><br>
+        <input name="controller" type="radio" id="on" value="ON">
+        <label for="ON">ON</label><br>
+        <input name="controller" type="radio" id="blinking" value="BLINKING" checked>
+        <label for="BLINKING">BLINKING</label><br>
+    </fieldset>
+    </form>
+    <div class="">
+      <input type="submit">
     </div>
   </div>
 

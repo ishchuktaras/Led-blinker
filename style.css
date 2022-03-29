@@ -3,8 +3,10 @@
 }
 
 .menu {
-  width: 25%;
+  width: 30%;
   margin: 15px 20px;
+  display: inline-block;
+  float: left;
 }
 
 .menu a {
@@ -25,39 +27,45 @@
   color: white;
 }
 
-.levy {
-  width: 25%;
-  float: left;
-  margin-top: 10px;
-}
-.pravy {
-  width: 75%;
-  float: left;
-  margin-top: 10px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.container {
+  margin: 10px;
+  float: right;
+  width: 60%;
+  border: 1px solid rgb(14, 54, 105);
 }
 
 input[type=submit]{
   background-color: rgb(14, 54, 105);
   color: white;
+  margin: 20px;
   padding: 10px;
-  float: right;
   border: 2px solid rgb(14, 54, 105);
   border-radius: 4px;
   width: 200px;
-  margin-top: 15px;
   cursor: pointer;
+  float: right;
 }
+
 input[type=submit]:hover{
   background-color: white;
   color:black;
 }
+
 input[type=submit]:active{
-  background-color: rgb(14, 54, 105);
+  background-color: rgb(22, 105, 14);
   color:white;
+}
+
+.text-actual {
+  padding: 10px;
+}
+
+.text-new {
+  float: left;
+  padding: 10px 10px;
+}
+
+fieldset {
+  width: 70%;
+  margin: 30px;
 }
