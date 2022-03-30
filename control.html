@@ -29,16 +29,16 @@
     </div>
     <fieldset>
       <form method="get" id="form_state">
-        <input name="controller" type="radio" id="off" value="OFF">
+        <input name="controller" type="radio" id="off" value="OFF" checked>
         <label for="OFF">OFF</label><br>
         <input name="controller" type="radio" id="on" value="ON">
         <label for="ON">ON</label><br>
-        <input name="controller" type="radio" id="blinking" value="BLINKING" checked>
+        <input name="controller" type="radio" id="blinking" value="BLINKING" >
         <label for="BLINKING">BLINKING</label><br>
     </fieldset>
     </form>
-    <div class="">
-      <input type="submit">
+    <div class="button">
+      <input type="submit" onclick="form_state();">
     </div>
   </div>
 

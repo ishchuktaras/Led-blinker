@@ -1,5 +1,4 @@
 function form_state (){
-  $('#form_state').submit(function(){
-    
-  });
+  let controller = getCheckedRadio().value;
+  let log = document.getElementById('log');
 }
