@@ -21,7 +21,7 @@
   <div class="container">
     <div class="text-actual">
       <p>Actual state:
-      <pre id="log"></pre>
+      <div id="log"></div>
       </p>
     </div>
     <div class="text-new">
@@ -29,17 +29,15 @@
     </div>
     <fieldset>
       <form method="get" id="form_state">
-        <input name="controller" type="radio" id="off" value="OFF" checked>
+        <input name="controller" type="radio" id="off" value="off" checked="checked">
         <label for="OFF">OFF</label><br>
-        <input name="controller" type="radio" id="on" value="ON">
+        <input name="controller" type="radio" id="on" value="on">
         <label for="ON">ON</label><br>
-        <input name="controller" type="radio" id="blinking" value="BLINKING" >
+        <input name="controller" type="radio" id="blinking" value="blinking">
         <label for="BLINKING">BLINKING</label><br>
+      </form>
     </fieldset>
-    </form>
-    <div class="button">
-      <input type="submit" onclick="form_state();">
-    </div>
+    <button id="super-button" onclick="form_state();">Set</button>
   </div>
 
 </body>

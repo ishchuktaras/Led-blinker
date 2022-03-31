@@ -33,7 +33,7 @@
   border: 1px solid rgb(14, 54, 105);
 }
 
-input[type=submit]{
+button{
   background-color: rgb(14, 54, 105);
   color: white;
   margin: 20px;
@@ -45,12 +45,12 @@ input[type=submit]{
   float: right;
 }
 
-input[type=submit]:hover{
+button:hover{
   background-color: white;
   color:black;
 }
 
-input[type=submit]:active{
+button:active{
   background-color: rgb(22, 105, 14);
   color:white;
 }
