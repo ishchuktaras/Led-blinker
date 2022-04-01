@@ -68,3 +68,7 @@ fieldset {
   width: 70%;
   margin: 30px;
 }
+
+#response {
+  color: red;
+}

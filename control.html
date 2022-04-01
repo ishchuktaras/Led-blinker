@@ -8,7 +8,7 @@
   <title>Control</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
-  <script src="jquery-3.6.0.min.js"></script>
+  
 </head>
 
 <body>
@@ -20,8 +20,7 @@
   </div>
   <div class="container">
     <div class="text-actual">
-      <p>Actual state:
-      <div class="response"></div>
+      <p>Actual state: <span id="response"></span>
       </p>
     </div>
     <div class="text-new">
@@ -29,15 +28,15 @@
     </div>
     <fieldset>
       <form method="get" id="form_state">
-        <input name="controller" type="radio" value="off" checked="checked">
+        <input name="object" type="radio" value="off" checked="checked">
         <label for="OFF">OFF</label><br>
-        <input name="controller" type="radio" value="on">
+        <input name="object" type="radio" value="on">
         <label for="ON">ON</label><br>
-        <input name="controller" type="radio" value="blinking">
+        <input name="object" type="radio" value="blinking">
         <label for="BLINKING">BLINKING</label><br>
       </form>
     </fieldset>
-    <button id="super-button">Set</button>
+    <button id="button" onclick="magicAction();">Set</button>
   </div>
 
 </body>
