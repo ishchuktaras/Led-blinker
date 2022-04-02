@@ -68,11 +68,7 @@ button:active{
   padding: 10px 10px;
 }
 
-p {
-  padding-left: 25px;
-}
-
-label {
+p,label {
   padding-left: 25px;
 }
 
