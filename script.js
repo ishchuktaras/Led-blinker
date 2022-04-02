@@ -39,7 +39,9 @@ function getCheckedRadio(radio_group) {
 
 //Configuration stranka
 function setInterval() {
-  let interval = document.getElementById("quantity").value;
+  var value = document.getElementById('quantity').value; //Vybraný objekt
+  document.getElementById("demo").innerHTML = value; //Kde vystavíme výsledek
 }
-document.getElementById("zakazat").onclick = someFunc;
+
+
 

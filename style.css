@@ -68,7 +68,7 @@ button:active{
   padding: 10px 10px;
 }
 
-p,label {
+p,label,#demo {
   padding-left: 25px;
 }
 
@@ -78,5 +78,9 @@ fieldset {
 }
 
 #response {
+  color: red;
+}
+
+#demo {
   color: red;
 }
