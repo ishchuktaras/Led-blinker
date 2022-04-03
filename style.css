@@ -37,16 +37,23 @@ input[type=number] {
   width: 150px;
 }
 
+#logtime {
+  margin-top: 20px;
+  width: 120px;
+  height: 40px;
+}
+
 button{
   background-color: rgb(14, 54, 105);
+  font-size: 1.2em;
   color: white;
   margin: 20px;
   padding: 10px;
   border: 2px solid rgb(14, 54, 105);
-  border-radius: 4px;
-  width: 200px;
+  border-radius: 20px;
+  width: 100px;
   cursor: pointer;
-  float: inline-end;
+  float: right;
 }
 
 button:hover{
@@ -83,4 +90,15 @@ fieldset {
 
 #demo {
   color: red;
+}
+
+.time-logs,.control-logs {
+  width: 200px;
+  margin: 20px 0 20px 0;
+  border: 1px solid rgb(14, 54, 105);
+  float: left;
+}
+
+.time-logs {
+  margin-left: 10px;
 }
