@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
   <div class="menu">
     <a href="index.html">Menu</a>
     <a href="control.html" class="active">Control</a>
@@ -26,7 +27,7 @@
       <p>New state:</p>
     </div>
     <fieldset>
-      <form method="post">
+      <form action="db.php" method="post">
         <input name="object" type="radio" value="off" checked="checked">
         <label for="OFF">OFF</label><br>
         <input name="object" type="radio" value="on">
@@ -35,7 +36,7 @@
         <label for="BLINKING">BLINKING</label><br>
       </form>
     </fieldset>
-    <button id="button" onclick='setController();'>Set</button>
+    <button id="button" name="submit" onclick='setController();'>Set</button>
   </div>
 
 </body>
